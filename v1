@@ -1,0 +1,25 @@
+void setup() {
+  size(600, 400); // sæt størrelsen på skærmen til 600x400 pixels
+}
+
+void draw() {
+  background(255, 255, 255); // sæt baggrundsfarven til hvid
+  noStroke(); // fjern stregen rundt om rektanglen
+  fill(120, 120, 120); // sæt farven på rektanglen til en mørk grå farve
+  rect(0, 0, width, height); // tegn rektanglen
+  fill(255, 215, 0); // sæt farven på teksten til en guldfarve
+  textSize(48); // indstil skriftstørrelsen til 48 punkter
+  text("Multiglans", width/2 - 120, height/2 - 20); // indsæt teksten centralt i logoet
+  fill(255, 215, 0); // sæt farven på teksten til en guldfarve
+  textSize(48); // indstil skriftstørrelsen til 48 punkter
+  text("Multiglans", width/2 - 120, height/2 - 20); // indsæt teksten centralt i logoet
+  
+  // tegn en rengøringsvogn
+  fill(255, 255, 255); // sæt farven på vognen til hvid
+  stroke(120, 120, 120); // sæt farven på kanten af vognen til mørk grå
+  strokeWeight(3); // sæt bredden på kanten af vognen til 3 pixels
+  rect(width/2 - 70, height/2 + 30, 140, 50); // tegn en rektangel som bunden af vognen
+  rect(width/2 - 30, height/2 - 20, 60, 50); // tegn en rektangel som midterste del af vognen
+  ellipse(width/2 - 50, height/2 + 80, 40, 40); // tegn et hjul
+  ellipse(width/2 + 50, height/2 + 80, 40, 40); // tegn et hjul
+}
